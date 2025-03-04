@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador Passwords</title>
+</head>
+
+<body>
+
+    <main class="contenedor-principal">
+        <h1>Password Generator</h1>
+        <div class="contenedor-password">
+            <p></p> <!--Contendra el password generado-->
+            <p></p> <!--Boton de copiado del password-->
+        </div>
+
+        <div class="contenedor-opciones">
+            <div>
+                <label for="">Character Length</label>
+                <p id="muestra-cantidad-caracteres">10</p>
+                <input type="range" minlength="0" maxlength="20">
+            </div>
+
+            <div class="contenedor-checkboxes">
+                <div>
+                    <input type="checkbox" id="">
+                    <label for="">Include Uppercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="">
+                    <label for="">Include Lowercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="">
+                    <label for="">Include Numbers</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="">
+                    <label for="">Include Symbols</label>
+                </div>
+            </div>
+
+
+            <div class="contendor-strength">
+                <p>Strength</p>
+            </div>
+
+            <button type="button">
+                Generate
+            </button>
+
+        </div>
+    </main>
+
+
+</body>
+
+</html>
