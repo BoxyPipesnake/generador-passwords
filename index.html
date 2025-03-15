@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-    <h1>Password Generator</h1>
-    
-    <div class="contenedor-password">
-        <p id="password-generado"></p> <!-- Contendrá el password generado -->
-        <p id="btn-copiar-password"></p> <!-- Botón de copiado del password -->
-    </div>
+    <main>
+        <h1>Password Generator</h1>
 
-    <div class="contenedor-opciones">
-        <div>
-            <div class="cantidad-caracteres">
-                <label for="cantidad-caracteres-usuario">Character Length</label>
-                <p id="muestra-cantidad-caracteres"></p>
-            </div>
-            <input class="input-scroll" id="cantidad-caracteres-usuario" type="range" min="10" max="20">
-        </div>
-        
-        <div class="contenedor-checkboxes">
-            <div>
-                <input type="checkbox" id="uppercase-input">
-                <label for="uppercase-input">Include Uppercase Letters</label>
-            </div>
-            <div>
-                <input type="checkbox" id="lowercase-input">
-                <label for="lowercase-input">Include Lowercase Letters</label>
-            </div>
-            <div>
-                <input type="checkbox" id="numbers-input">
-                <label for="numbers-input">Include Numbers</label>
-            </div>
-            <div>
-                <input type="checkbox" id="symbols-input">
-                <label for="symbols-input">Include Symbols</label>
-            </div>
+        <div class="contenedor-password">
+            <p class="password texto-sombreado" id="password-generado">P4$5W0rD!</p> <!-- Contendrá el password generado -->
+            <p id="btn-copiar-password"></p> <!-- Botón de copiado del password -->
         </div>
 
-        <div class="contendor-strength">
-            <p>Strength</p>
-        </div>
+        <div class="contenedor-opciones">
+            <div>
+                <div class="cantidad-caracteres">
+                    <label for="cantidad-caracteres-usuario">Character Length</label>
+                    <p id="muestra-cantidad-caracteres"></p>
+                </div>
+                <input class="input-scroll" id="cantidad-caracteres-usuario" type="range" min="10" max="20">
+            </div>
 
-        <button id="btn-generar-password" type="button">
-            Generate
-        </button>
-    </div>
+            <div class="contenedor-checkboxes">
+                <div>
+                    <input type="checkbox" id="uppercase-input">
+                    <label for="uppercase-input">Include Uppercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="lowercase-input">
+                    <label for="lowercase-input">Include Lowercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="numbers-input">
+                    <label for="numbers-input">Include Numbers</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="symbols-input">
+                    <label for="symbols-input">Include Symbols</label>
+                </div>
+            </div>
+
+            <div class="contendor-strength">
+                <p>Strength</p>
+            </div>
+
+            <button id="btn-generar-password" type="button">
+                Generate
+            </button>
+        </div>
+    </main>
 
     <script src="index.js"></script>
 </body>
+
 </html>

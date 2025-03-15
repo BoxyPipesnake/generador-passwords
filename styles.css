@@ -11,11 +11,41 @@ body {
     justify-content: center;
     align-items: center;
     color: #fff;
+    height: 100vh;
+}
+
+
+main {
+    width: 100%;
+    max-width: 600px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+h1 {
+    text-align: center;
+    color: hsl(249.23deg 5.14% 49.61%);
+    font-size: 18px;
+}
+
+.texto-sombreado {
+    color: hsl(247.5deg 4.71% 33.33%);
+    font-weight: bold;
+    width: 100%;
 }
 
 .contenedor-password, .contenedor-opciones {
-    padding: 2rem;
     background-color: hsl(247.5deg 10.26% 15.29%);
+}
+
+.contenedor-password {
+    padding: 1.5rem;
+}
+
+.password {
+    font-size: 20px;
 }
 
 
@@ -26,10 +56,10 @@ body {
 }
 
 .contenedor-opciones {
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 2rem;
 }
 
 .input-scroll {
